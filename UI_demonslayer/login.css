@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Poppins:wght@300;500&display=swap');
+
 
 *, html, body {
     margin: 0;
@@ -6,33 +8,41 @@
 }
 
 body {
+    position: relative;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./img/Register,Login/register.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/register_login/register.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container {
+    align-items: center;
     width: 65vw;
     height: 70vh;
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "login";
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "leftcon login";
     box-shadow: 0 0 17px 10px rgb(0 0 0 / 30%);
     border-radius: 20px;
     background: black;
     overflow: hidden;
 }
 
-.leftcon{
+.leftcon {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
-    width   : 25vw;
+    align-items: center;
+    text-align: center;
+    background: black;
+    color: white;
+    font-family: 'IM Fell English SC', serif;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .login {
@@ -41,13 +51,20 @@ body {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    position: relative;
     background: black;
     width   : 25vw;
 }
 
 .title{
     color: white;
+    font-family: 'Poppins', sans-serif;
+     font-weight: 500;
+}
+
+.subtitle{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 .text-input {
@@ -57,6 +74,8 @@ body {
     border-bottom: 1px solid white;
     background-color: black;
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 .text-input input {
@@ -80,6 +99,9 @@ body {
     width: 100%;
     padding: 17px;
     color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
     background: #FE0000;
     border: none;
     border-radius: 25px;
@@ -88,7 +110,6 @@ body {
 }
 
 a {
-    font-size: 12px;
     color: #FE0000;
     cursor: pointer;
     user-select: none;
@@ -114,7 +135,7 @@ a.forgot {
 @media (min-width: 768px) {
     .container {
         grid-template-columns: 50% 50%;
-        grid-template-areas: "design login";
+        grid-template-areas: "leftcon login";
     }
 
     .design {
