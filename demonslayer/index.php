@@ -29,9 +29,6 @@
  
 			<br/>
 			<br/>
-			<center>
-				<a class="link" href="https://www.malasngoding.com">kembali</a>
-			</center>
 		</form>
 		
 	</div>
