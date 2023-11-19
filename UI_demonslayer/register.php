@@ -23,7 +23,7 @@
         </div>
         <div class="register">
             <h1 class="title">Sign up</h1>
-            <h5 class="subtitle">Jika Kamu sudah mempunyai akun<br>Kamu dapat <a href="login.html">Masuk!</a></h5>
+            <h5 class="subtitle">Jika Kamu sudah mempunyai akun<br>Kamu dapat <a href="login.php">Masuk!</a></h5>
             <br>
             <div class="text-input">
                 <label for="text">Nama</label>

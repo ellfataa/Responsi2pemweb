@@ -33,18 +33,19 @@ include("koneksi.php");
         </div>
         <div class="login">
             <h1 class="title">Sign in</h1>
-            <h5 class="subtitle">Jika Kamu belum mempunyai akun<br>Kamu dapat <a href="register.html">Daftar!</a></h5>
+            <h5 class="subtitle">Jika Kamu belum mempunyai akun<br>Kamu dapat <a href="register.php">Daftar!</a></h5>
             <br>
+            <form action="cek_login.php" method="post">
             <div class="text-input">
                 <label for="text">Username</label>
-                <input type="text"  placeholder="Masukkan username">
+                <input type="text" name="username" placeholder="Masukkan username">
             </div>
             <div class="text-input">
                 <label for="password">Password</label>
-                <input type="password" placeholder="Masukkan password">
+                <input type="password" name="password" placeholder="Masukkan password">
             </div>
             <button class="login-btn">Masuk</button>
-            </div>
+            </form>
         </div>
     </div>
 </body>
