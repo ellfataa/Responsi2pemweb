@@ -13,7 +13,7 @@
     <!-- Navbar Section -->
     <nav class="navbar">
       <div class="navbar__container">
-        <a href="#home" id="navbar__logo">Demon Ward</a>
+        <a id="navbar__logo">Demon Ward</a>
         <div class="navbar__toggle" id="mobile-menu">
           <span class="bar"></span> <span class="bar"></span>
           <span class="bar"></span>
@@ -33,7 +33,7 @@
           </li>
           </li>
           <li class="navbar__btn">
-            <a href="logout.php" class="button" id="logout">Keluar</a>
+            <a href="login.html" class="button" id="logout">Keluar</a>
           </li>
         </ul>
       </div>
@@ -57,7 +57,7 @@
           <p>Demon Slayer: Kimetsu no Yaiba, adalah sebuah seri manga Jepang yang ditulis dan diilustrasikan oleh Koyoharu Gotouge. Ceritanya mengisahkan tentang Tanjiro Kamado, seorang anak laki-laki yang menjadi pembasmi iblis setelah keluarganya dibantai oleh iblis dan adik perempuannya yang bernama Nezuko diubah menjadi iblis.
             <br><br>
             Manga ini pertama kali rilis di majalah Weekly Shonen Jump pada Februari 2016.  Mengisahkan tentang Seorang pemuda bernama Tanjiro Kamado yang hidup di Jepang pada Zaman Edo.</p>
-          <button class="main__btn"><a href="#">Selengkapnya</a></button>
+          <button class="main__btn"><a href="sejarah.html">Selengkapnya</a></button>
         </div>
           <div class="main__img--container sejarah">
               <img src="./img/register_login/logo.png" alt="Demon Slayer" width="338.8" height="316.8"/>
@@ -125,5 +125,10 @@
     </div>
 
   <script src="index.js"></script>
+  <script>
+      document.getElementById('home-page').addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  </script>
 </body>
 </html>
