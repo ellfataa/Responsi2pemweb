@@ -49,5 +49,13 @@ include("koneksi.php");
         </div>
     </div>
 </body>
+<script>loginForm.addEventListener("submit", function(event) {
+        if (!isUsernameValid) { 
+            event.preventDefault(); 
+        } else {
+            window.location.href = "cek_login.php";
+            event.preventDefault(); 
+        }
+    });</script>
 
 </html>
