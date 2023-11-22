@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Poppins:wght@300;400;500;y;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -373,11 +373,6 @@
   margin-right: 3rem;
 }
 
-.fa-layer-group,
-.fa-users {
-  font-size: 14rem;
-}
-
 #card-2 {
   background: #ff512f;
   background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
@@ -422,10 +417,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .fa-users,
-  .fa-layer-group {
-    font-size: 4rem;
-  }
 
   .main__content h1 {
     font-size: 2rem;
