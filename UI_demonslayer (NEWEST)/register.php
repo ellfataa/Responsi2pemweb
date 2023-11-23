@@ -50,7 +50,7 @@ if(isset($_POST['register'])){
             </div>
             <div class="text-input">
                 <label for="text">Username</label>
-                <input type="text" name="username" id="username" placeholder="Masukkan username" required>
+                <input type="text" name="username" id="username" placeholder="Masukkan username" maxlength="10" required>
                 <p id="username-error" style="color: red; display: none;">Username must not contain symbols or spaces</p>
             </div>
             <div class="text-input">

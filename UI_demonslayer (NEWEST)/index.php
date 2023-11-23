@@ -1,7 +1,12 @@
 <?php 
+include("koneksi.php");
 session_start();
+if($_SESSION['level']==""){
+  header("location:index.php?pesan=gagal");
+}
 
-
+$read = mysqli_query($koneksi, "SELECT * FROM artikel ORDER BY idartikel ASC");
+$data_posts = mysqli_fetch_array($read);
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +34,7 @@ session_start();
             <p class="navbar__links" id="home-page">Home</p>
           </li>
           <li class="navbar__item">
-            <a href="sejarah.html" class="navbar__links" id="sejarah-page">Sejarah</a>
+            <a href="sejarah.php" class="navbar__links" id="sejarah-page">Sejarah</a>
           </li>
           <li class="navbar__item">
             <a href="karakter.html" class="navbar__links" id="karakter-page">Karakter</a>
@@ -39,7 +44,10 @@ session_start();
           </li>
           </li>
           <li class="navbar__btn">
-            <a href="login.html" class="button" id="logout">Keluar</a>
+            <a href="logout.php" class="button" id="logout">Keluar</a>
+          </li>
+          <li class="navbar__item">
+            <div class="navbar__links"><?php echo $_SESSION['username']; ?></div>
           </li>
         </ul>
       </div>
@@ -63,7 +71,7 @@ session_start();
           <p>Demon Slayer: Kimetsu no Yaiba, adalah sebuah seri manga Jepang yang ditulis dan diilustrasikan oleh Koyoharu Gotouge. Ceritanya mengisahkan tentang Tanjiro Kamado, seorang anak laki-laki yang menjadi pembasmi iblis setelah keluarganya dibantai oleh iblis dan adik perempuannya yang bernama Nezuko diubah menjadi iblis.
             <br><br>
             Manga ini pertama kali rilis di majalah Weekly Shonen Jump pada Februari 2016.  Mengisahkan tentang Seorang pemuda bernama Tanjiro Kamado yang hidup di Jepang pada Zaman Edo.</p>
-          <button class="main__btn"><a href="sejarah.html">Selengkapnya</a></button>
+          <button class="main__btn"><a href="sejarah.php">Selengkapnya</a></button>
         </div>
           <div class="main__img--container sejarah">
               <img src="./img/register_login/logo.png" alt="Demon Slayer" width="338.8" height="316.8"/>

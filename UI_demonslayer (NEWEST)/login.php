@@ -32,7 +32,7 @@ if(isset($_GET['pesan'])){
             <h1 class="title">Sign in</h1>
             <h5 class="subtitle">Jika Kamu belum mempunyai akun<br>Kamu dapat <a href="register.php">Daftar!</a></h5>
             <br>
-          <form action="cek_login.php" id="login-form">
+          <form action="cek_login.php" id="login-form" method="post">
             <div class="text-input">
                 <label for="text">Username</label>
                 <input type="text" id="username" name="username" placeholder="Masukkan username" required>
@@ -43,7 +43,7 @@ if(isset($_GET['pesan'])){
                     <input type="password" placeholder="Masukkan password" name="password" id="password" required>
                     <i class="fa-solid fa-eye" class="eye"></i>
             </div>
-            <button class="login-btn" type="submit">Masuk</button>
+            <button class="login-btn" type="submit" name="submit">Masuk</button>
           </form>
             </div>
         </div>
