@@ -81,51 +81,51 @@ $data_posts = mysqli_fetch_array($read);
         </svg></div>
         <div class="alur__img--container fade">
           <h1>The Final Selection Arc</h1>
-          <img src="./img/sejarah/1.png" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-1.php"><img src="./img/sejarah/1.png" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>The Kidnapper's Bog Arc</h1>
-          <img src="./img/sejarah/2.jpeg" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-2.php"><img src="./img/sejarah/2.jpeg" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>Asakusa Arc</h1>
-          <img src="./img/sejarah/3.png" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-3.php"><img src="./img/sejarah/3.png" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>Tsuzumi Mansion Arc</h1>
-          <img src="./img/sejarah/4.png" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-4.php"><img src="./img/sejarah/4.png" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>Mount Natagumo Arc</h1>
-          <img src="./img/sejarah/5.png" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-5.php"><img src="./img/sejarah/5.png" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>The Rehabilitation Training Arc</h1>
-          <img src="./img/sejarah/6.jpeg" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-6.php"><img src="./img/sejarah/6.jpeg" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>Mugen Train Arc</h1>
-          <img src="./img/sejarah/7.png" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-7.php"><img src="./img/sejarah/7.png" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>Entertainment District Arc</h1>
-          <img src="./img/sejarah/8.png" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-8.php"><img src="./img/sejarah/8.png" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>The Swordsmith Village Arc</h1>
-          <img src="./img/sejarah/9.jpeg" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-9.php"><img src="./img/sejarah/9.jpeg" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>The Hashira Training Arc</h1>
-          <img src="./img/sejarah/10.webp" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-10.php"><img src="./img/sejarah/10.webp" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>The Infinity Castle Arc</h1>
-          <img src="./img/sejarah/11.png" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-11.php"><img src="./img/sejarah/11.png" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__img--container fade">
           <h1>The Sunrise Countdown Arc</h1>
-          <img src="./img/sejarah/12.png" alt="Alur cerita" width="994.4" height="559.9"/>
+          <a href="sejarah-12.php"><img src="./img/sejarah/12.png" alt="Alur cerita" width="994.4" height="559.9"/></a>
         </div>
         <div class="alur__svg2"><svg xmlns="http://www.w3.org/2000/svg" width="45" height="43" viewBox="0 0 45 43" fill="none" id="svg2" onclick="plusSlides(1)">
           <path d="M45 21.5L0 0.282379V42.7176L45 21.5Z" fill="white"/>
