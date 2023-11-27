@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sejarah</title>
-    <link rel="stylesheet" href="src/sejarah.css" />
+    <link rel="stylesheet" href="./src/sejarah-arc.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,20 +20,20 @@
         </div>
         <ul class="navbar__menu">
           <li class="navbar__item">
-            <a href="index.html" class="navbar__links" id="home-page">Home</a>
+            <a href="index.php" class="navbar__links" id="home-page">Home</a>
           </li>
           <li class="navbar__item">
             <p class="navbar__links" id="sejarah-page">Sejarah</p>
           </li>
           <li class="navbar__item">
-            <a href="karakter.html" class="navbar__links" id="karakter-page">Karakter</a>
+            <a href="karakter.php" class="navbar__links" id="karakter-page">Karakter</a>
           </li>
           <li class="navbar__item">
-            <a href="artikel.html" class="navbar__links" id="artikel-page">Artikel</a>
+            <a href="artikel.php" class="navbar__links" id="artikel-page">Artikel</a>
           </li>
           </li>
           <li class="navbar__btn">
-            <a href="login.html" class="button" id="logout">Keluar</a>
+            <a href="login.php" class="button" id="logout">Keluar</a>
           </li>
         </ul>
       </div>
@@ -43,7 +43,7 @@
     <div class="alur" id="alur">
       <div class="alur__container">
         <div class="alur__content">
-          <a href="sejarah.html">← Sejarah</a>
+          <a href="sejarah.php">← Sejarah</a>
           <h1>Mugen Train Arc</h1>
           <img src="./img/sejarah/7.png" alt="Alur cerita" width="994.4" height="559.9"/>
           <p>Arc kali ini diadaptasi menjadi bentuk film, dimana fokus utamanya adalah pada aksi hashira Rengoku yang mencuri perhatian. Trio Tanjiro, Zenitsu, dan Inosuke diperintahkan untuk mendampingi Rengoku untuk mengalahkan Enmu, iblis Pangkat Rendah yang menyatukan jiwanya di sebuah kereta yang bisa membuat siapapun yang menaiki kereta tersebut berada di alam mimpi.
