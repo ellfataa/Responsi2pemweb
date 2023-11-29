@@ -94,16 +94,6 @@ body {
     font-weight: 300;
 }
 
-.fa-eye {
-    position: absolute;
-    top: 70%;
-    right: 10px;
-    transform: translateY(-50%);
-    color: white;
-    cursor: pointer;
-}
-
-
 .text-input input {
     margin-top: 3px;
     color: white;
@@ -115,8 +105,32 @@ body {
     margin-left: 0px;
 }
 
-.text-input i {
+ion-icon {
+    font-size: 20px;
+}
+
+.white-icon {
     color: white;
+}
+  
+.text-input button {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 100%;
+right: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+border: none;
+outline: none;
+background: none;
+}
+
+.text-input button:hover > ion-icon {
+opacity: 0.8;
 }
 
 label{
