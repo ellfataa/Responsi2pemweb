@@ -116,7 +116,7 @@ ion-icon {
 .text-input button {
 position: absolute;
 top: 50%;
-transform: translateY(-50%);
+transform: translateY(-32%);
 width: 30px;
 height: 100%;
 right: 0;
