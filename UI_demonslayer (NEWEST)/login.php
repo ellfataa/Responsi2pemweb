@@ -41,7 +41,9 @@ if(isset($_GET['pesan'])){
             <div class="text-input" id="password-container">
                     <label for="password">Password</label>
                     <input type="password" placeholder="Masukkan password" name="password" id="password" required>
-                    <i class="fa-solid fa-eye" class="eye"></i>
+                    <button type="button" id="pass-btn">
+                        <ion-icon class="white-icon" name="eye"></ion-icon>
+                    </button>
             </div>
             <button class="login-btn" type="submit" name="submit">Masuk</button>
           </form>
@@ -50,18 +52,17 @@ if(isset($_GET['pesan'])){
     </div>
 </body>
 
-<script>
-    const passwordInput = document.querySelector("#password");
-    const eye = document.querySelector(".fa-eye");
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-    eye.addEventListener("click", function() {
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-            eye.style.opacity = 0.5;
-        } else {
-            passwordInput.type = "password";
-            eye.style.opacity = 1;
-        }
+<script>
+    let btn = document.getElementById('pass-btn');
+    let icon = btn.querySelector('ion-icon');
+    let input = document.getElementById('password');
+
+
+    btn.addEventListener('click', () => {
+    input.type == 'password' ? [input.type = 'text', icon.setAttribute('name', 'eye-off')] : [input.type = 'password', icon.setAttribute('name', 'eye')];
+    input.focus();
     });
 
     // Username must not contain symbols and spaces
