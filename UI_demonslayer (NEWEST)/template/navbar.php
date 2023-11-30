@@ -1,6 +1,6 @@
 <!-- Navbar Section -->
 <?php 
-session_start();
+session_start(); 
 ?>
 <nav class="navbar">
       <div class="navbar__container">
