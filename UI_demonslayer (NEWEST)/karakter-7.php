@@ -10,34 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a id="navbar__logo">Demon Ward</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__links" id="home-page">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="sejarah.html" class="navbar__links" id="sejarah-page">Sejarah</a>
-          </li>
-          <li class="navbar__item">
-            <p class="navbar__links" id="karakter-page">Karakter</p>
-          </li>
-          <li class="navbar__item">
-            <a href="artikel.html" class="navbar__links" id="artikel-page">Artikel</a>
-          </li>
-          </li>
-          <li class="navbar__btn">
-            <a href="login.html" class="button" id="logout">Keluar</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <?php 
+      include 'template/navbar.php';
+    ?>
 
     <!-- Alur Section -->
   <div class="alur" id="alur">
