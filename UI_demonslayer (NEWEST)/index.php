@@ -3,6 +3,7 @@ include("koneksi.php");
 session_start();
 if($_SESSION['level']==""){
   header("location:index.php?pesan=gagal");
+
 }
 
 $read = mysqli_query($koneksi, "SELECT * FROM artikel ORDER BY idartikel ASC");
@@ -101,7 +102,7 @@ $data_posts = mysqli_fetch_array($read);
             <div class="breaking-news__title">Breaking News</div>
             <div class="breaking-news__content">Cari berita dan info terbaru tentang Demon Slayer</div>
           </div>
-        <div class="articles__wrapper">
+        <div class="articles__wrapper">  
           <div class="articles__card">
             <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
             <div class="articles__card__title">Berita</div>
@@ -111,14 +112,14 @@ $data_posts = mysqli_fetch_array($read);
           <div class="articles__card">
             <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
             <div class="articles__card__title">Berita</div>
-            <div class="articles__card__headline">Judul Artikel</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
+            <div class="articles__card__headline"><?php echo $data_posts[1] ?></div>
+            <p><?php echo $data_posts[2] ?></p>
           </div>
           <div class="articles__card">
             <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
             <div class="articles__card__title">Berita</div>
-            <div class="articles__card__headline">Judul Artikel</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque tortor sit amet condimentum porttitor. Integer augue urna, volutpat in sapien a, convallis commodo quam.</p>
+            <div class="articles__card__headline"><?php echo $data_posts[1] ?></div>
+            <p><?php echo $data_posts[2] ?></p>
           </div>
         </div>
         <div class="main__content">
