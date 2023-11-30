@@ -38,10 +38,10 @@ $data_posts = mysqli_fetch_array($read);
             <a href="sejarah.php" class="navbar__links" id="sejarah-page">Sejarah</a>
           </li>
           <li class="navbar__item">
-            <a href="karakter.html" class="navbar__links" id="karakter-page">Karakter</a>
+            <a href="karakter.php" class="navbar__links" id="karakter-page">Karakter</a>
           </li>
           <li class="navbar__item">
-            <a href="artikel.html" class="navbar__links" id="artikel-page">Artikel</a>
+            <a href="artikel.php" class="navbar__links" id="artikel-page">Artikel</a>
           </li>
           </li>
           <li class="navbar__btn">
