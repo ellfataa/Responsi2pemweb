@@ -12,8 +12,23 @@
   <body>
     <!-- Navbar Section -->
     <?php
-    include 'template/navbar.php';
-    ?><?php
+    include 'template/navbar1.php';
+    ?>
+    <?php
+    if(isset($_POST['submit'])){
+      $judul = $_POST['judul'];
+      $isi = $_POST['isi'];
+    
+      $query = "INSERT INTO artikel (judul,isi) VALUES ('$judul','$isi')";
+      $result = mysqli_query($koneksi,$query);
+      if($result){
+        echo 
+            "<script>
+            alert('Berhasil Menambahkan Artikel!');
+            document.location = 'artikel.php';
+            </script>";
+      }
+    }
 
     $query = "SELECT * FROM artikel";
     $result = mysqli_query($koneksi, $query);
@@ -37,20 +52,23 @@
               ";
             }
           ?>
+          <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
           <div class="articles__card c">
             <img src="./img/home/artikel.png" alt="artikel"/>
           <div class="form">
             <div>
-              <input type="text" placeholder="Masukkan judul..." id="judul" />
+              
+              <input type="text" name="judul" placeholder="Masukkan judul..." id="judul" />
             </div>
             <div>
-              <textarea id="pesan" placeholder="Ketikkan pesan..."></textarea>
+              <textarea id="pesan" name="isi" placeholder="Ketikkan pesan..."></textarea>
             </div>
           </div>
             <div class="articles__card main__btn">
-              <button type="submit" id="submit"><span>Submit</span></button>
+              <button type="submit" name="submit" id="submit"><span>Submit</span></button>
             </div>            
           </div>
+          </form>
      </div>
 
     <!-- Footer Section -->

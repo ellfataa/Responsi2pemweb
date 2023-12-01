@@ -12,7 +12,7 @@
   <body>
     <!-- Navbar Section -->
     <?php 
-      include 'template/navbar.php';
+      include 'template/navbar1.php';
     ?>
 
     <!-- Alur Section -->
@@ -22,7 +22,7 @@
           <h1>Karakter</h1>
             <div class="search-input">
             <form class="nosubmit">
-              <input class="nosubmit" type="search" placeholder="Cari karakter">
+              <input class="nosubmit" type="text" id="searchInput" placeholder="Cari karakter">
             </form>
             </div>
           <img src="./img/home/karakter.png" alt="Demon Slayer" width="592.9" height="404.8"/>
@@ -36,33 +36,32 @@
     <div class="karakter" id="karakter">
       <h1>List Karakter</h1>
       <div class="karakter__container">
-          <table>
-            <tr>
-              <td><a href="karakter/karakter-1.php"><img src="./img/karakter/1.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-2.php"><img src="./img/karakter/2.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-3.php"><img src="./img/karakter/3.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-4.php"><img src="./img/karakter/4.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-5.php"><img src="./img/karakter/5.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-            </tr>
-            <tr>
-              <td><a href="karakter/karakter-6.php"><img src="./img/karakter/6.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-7.php"><img src="./img/karakter/7.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-8.php"><img src="./img/karakter/8.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-9.php"><img src="./img/karakter/9.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-10.php"><img src="./img/karakter/10.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-            </tr>
-            <tr>
-              <td><a href="karakter/karakter-11.php"><img src="./img/karakter/11.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-12.php"><img src="./img/karakter/12.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-13.php"><img src="./img/karakter/13.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-14.php"><img src="./img/karakter/14.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-15.php"><img src="./img/karakter/15.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-            </tr>
-            <tr>
-              <td><a href="karakter/karakter-16.php"><img src="./img/karakter/16.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-17.php"><img src="./img/karakter/17.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter/karakter-18.php"><img src="./img/karakter/18.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-            </tr>
+          <table id="karakterTable">
+            <!-- bagian cetak data dari database karakter -->
+            <?php 
+              $result = mysqli_query($koneksi, "SELECT * FROM karakter");
+              $count = 0;
+
+              while($data_karakter = mysqli_fetch_assoc($result)){
+                if ($count % 5 == 0) {
+                  echo "<tr>";
+                }
+
+                echo "<td data-name='" . strtolower($data_karakter['namakarakter']) . "'>";
+                echo "<a href='karakter/karakter-$data_karakter[idkarakter].php'><img src='img/karakter/$data_karakter[cover]' alt='Demon Slayer' width='147.4' height='143'/></a>";
+                echo "</td>";
+
+                $count++;
+
+                if ($count % 5 == 0) {
+                  echo "</tr>";
+                }
+              }
+
+              if ($count % 5 != 0) {
+                echo "</tr>";
+              }
+            ?>
           </table>
     </div>
   </div>
@@ -81,9 +80,29 @@
 
   <script src="index.js"></script>
   <script>
-    document.getElementById('karakter-page').addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('searchInput').addEventListener('input', function () {
+    const searchValue = this.value.toLowerCase();
+    const karakterTable = document.getElementById('karakterTable');
+    const rows = karakterTable.getElementsByTagName('td');
+
+    for (let i = 0; i < rows.length; i++) {
+      const characterName = rows[i].dataset.name.toLowerCase();
+      if (characterName.includes(searchValue)) {
+        rows[i].style.display = '';
+      } else {
+        rows[i].style.display = 'none';
+      }
+    }
+  });
+
+  // Tambahkan event listener untuk mengarahkan ke halaman karakter saat gambar diklik
+  const karakterImages = document.querySelectorAll('#karakterTable td');
+  karakterImages.forEach(image => {
+    image.addEventListener('click', function () {
+      const characterName = this.dataset.name;
+      window.location.href = `karakter/karakter-${characterName}.php`;
     });
+  });
 </script>
 </body>
 </html>

@@ -19,12 +19,7 @@
   <div class="alur" id="alur">
     <div class="alur__container">
       <div class="alur__content">
-        <a href="karakter.php">Karakter</a>
-          <div class="search-input">
-          <form class="nosubmit">
-            <input class="nosubmit" type="search" placeholder="Cari karakter">
-          </form>
-          </div>
+        <a href="../karakter.php">Karakter</a>
         </div>
       </div>
   </div>
@@ -33,7 +28,7 @@
     <div class="main" id="karakter">
       <div class="main__container">
         <div class="main__img--container">
-          <img src="./img/karakter/a.png" alt="Demon Slayer" width="316.8" height="671"/>
+          <img src="../img/karakter/a.png" alt="Demon Slayer" width="316.8" height="671"/>
         </div>
         <div class="main__content">
           <h1>Tanjiro Kamado</h1>
@@ -63,7 +58,7 @@
       <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <img src="./img/register_login/logo.png" alt="Demon Slayer" width="57" height="53"/>
+            <img src="../img/register_login/logo.png" alt="Demon Slayer" width="57" height="53"/>
           </div>
           <p class="website__rights">Copyright @2023 Demon Ward</p>
         </div>

@@ -6,10 +6,13 @@ if($_SESSION['level']==""){
   header("location:login.php?pesan=gagal");
 
 }
+$read = mysqli_query($koneksi, "SELECT * FROM artikel ORDER BY idartikel DESC LIMIT 3");
+$data_posts = array(); // Inisialisasi array untuk menampung data
 
-
-$read = mysqli_query($koneksi, "SELECT * FROM artikel ORDER BY idartikel ASC");
-$data_posts = mysqli_fetch_array($read);
+// Mengambil setiap baris data dan memasukkannya ke dalam array
+while ($row = mysqli_fetch_assoc($read)) {
+  $data_posts[] = $row;
+}
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +29,7 @@ $data_posts = mysqli_fetch_array($read);
   <body>
     <!-- Navbar Section -->
     <?php 
-      include 'template/navbar.php';
+      include 'template/navbar1.php';
     ?>
     <!-- Hero Section -->
     <div class="hero" id="home">
@@ -64,56 +67,32 @@ $data_posts = mysqli_fetch_array($read);
         <div class="main__content">
           <h1>Karakter</h1>
           <p>Selamat datang di Galeri Karakter Demon Slayer! Temukan keajaiban, ketegangan, dan keunikan dari setiap tokoh dalam anime ini. Mulai dari pahlawan yang penuh semangat, para Hashira yang perkasa, hingga iblis yang menantang takdir. Jelajahi profil karakter yang mendalam, ilustrasi memukau, dan cerita yang memikat di dunia yang dipenuhi pertarungan epik dan kisah penuh inspirasi. Selamat menikmati perjalanan karakter yang tak terlupakan!</p>
-          <button class="main__btn"><a href="#">Selengkapnya</a></button>
+          <button class="main__btn"><a href="karakter.php">Selengkapnya</a></button>
         </div>
       </div>
     </div>
 
     <!-- Artikel Section -->
     <div class="articles" id="articles">
-          <h1>Artikel</h1>
-          <div class="breaking__news">
-            <div class="breaking-news__title">Breaking News</div>
-            <div class="breaking-news__content">Cari berita dan info terbaru tentang Demon Slayer</div>
-          </div>
-        <div class="articles__wrapper">  
+      <h1>Artikel</h1>
+      <div class="breaking__news">
+        <div class="breaking-news__title">Breaking News</div>
+        <div class="breaking-news__content">Cari berita dan info terbaru tentang Demon Slayer</div>
+      </div>
+      <div class="articles__wrapper">  
+        <?php foreach ($data_posts as $post): ?>
           <div class="articles__card">
             <div>
-            <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
+              <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
             </div>
             <div class="articles__card__title">Berita</div>
-            <div class="articles__card__headline"><?php echo $data_posts[1] ?></div>
+            <div class="articles__card__headline"><?php echo $post['judul']; ?></div>
           </div>
-          <div class="articles__card">
-            <div>
-            <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
-            </div>
-            <div class="articles__card__title">Berita</div>
-            <div class="articles__card__headline"><?php echo $data_posts[1] ?></div>
-          </div>
-          <div class="articles__card">
-            <div>
-            <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
-            </div>
-            <div class="articles__card__title">Berita</div>
-            <div class="articles__card__headline"><?php echo $data_posts[1] ?></div>
-          </div>
-        </div>
-        <div class="main__content">
-          <button class="main__btn"><a href="#">Selengkapnya</a></button>
-        </div>
-     </div>
-
-    <!-- Footer Section -->
-    <div class="footer__container">
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <div class="footer__logo">
-            <img src="./img/register_login/logo.png" alt="Demon Slayer" width="57" height="53"/>
-          </div>
-          <p class="website__rights">Copyright @2023 Demon Ward</p>
-        </div>
-      </section>
+        <?php endforeach; ?>
+      </div>
+      <div class="main__content">
+        <button class="main__btn"><a href="artikel.php">Selengkapnya</a></button>
+      </div>
     </div>
 
   <script src="index.js"></script>

@@ -6,6 +6,7 @@
     <a href="?page=user">User</a>
     <a href="?page=karakter">Karakter</a>
     <a href="?page=artikel">Artikel</a>
+    <a href="../logout.php">Keluar</a>
 </div>
 
 <div class="main">

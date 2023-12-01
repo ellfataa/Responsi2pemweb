@@ -19,8 +19,8 @@ $result= mysqli_query($koneksi, $query);
                     <td>$data_article[judul]</td>
                     <td>$data_article[isi]</td>
                     <td>
-                      <a href='update_user.php?updateid=$data_article[idartikel]'> EDIT </a> ||
-                      <a href='delete_user.php?deleteid=$data_article[idartikel]'> DELETE </a>
+                      <a href='update_artikel.php?updateid=$data_article[idartikel]'> EDIT </a> ||
+                      <a href='delete_artikel.php?deleteid=$data_article[idartikel]'> DELETE </a>
                     </td>
                 </tr>
                 ";

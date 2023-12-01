@@ -12,21 +12,22 @@
   ?>
 
 <!-- Page content -->
-              <div class="inner">
-                <h3><?php echo $jumlah_artikel ?></h3>
-                <p>Total artikel</p>
-              </div>
-              <a href="?page=artikel" class="small-box-footer">More info</a>
-          
-              <div class="inner">
-                <h3><?php echo $jumlah_karakter ?></h3>
-                <p>Total Karakter</p>
-              </div>
-              <a href="?page=karakter" class="small-box-footer">More info </a>
-         
-              <div class="inner">
-                <h3><?php echo $jumlah_user ?></h3>
-                <p>Total User</p>
-              </div>
-              <a href="?page=user" class="small-box-footer">More info </a>
-              </div>
+  <h1 style="margin-left: 5px;">Selamat Datang di Dashboard admin Website Demon Ward!</h1>
+
+  <div class="dashboard">
+    <h3>Total artikel</h3>
+    <p><?php echo $jumlah_artikel ?></p>
+    <a href="?page=artikel" class="small-box-footer">More info</a>
+  </div>
+
+   <div class="dashboard">
+    <h3>Total Karakter</h3>
+    <p><?php echo $jumlah_karakter ?></p>
+    <a href="?page=karakter" class="small-box-footer">More info </a>
+  </div>
+      
+  <div class="dashboard">
+    <h3>Total User</h3>
+    <p><?php echo $jumlah_user ?></p>
+    <a href="?page=user" class="small-box-footer">More info </a>
+  </div></br>

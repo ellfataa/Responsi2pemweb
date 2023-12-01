@@ -18,11 +18,11 @@ $result= mysqli_query($koneksi, $query);
                 <tr>
                     <td>$data_karakter[idkarakter]</td>
                     <td>$data_karakter[namakarakter]</td>
-                    <td>$data_karakter[cover]</td>
+                    <td><img width='100' height='100' src='images/$data_karakter[cover]'></td>
                     <td>$data_karakter[biodata]</td>
                     <td>
-                      <a href='update_user.php?updateid=$data_karakter[idkarakter]'> EDIT </a> ||
-                      <a href='delete_user.php?deleteid=$data_karakter[idkarakter]'> DELETE </a>
+                      <a href='update_karakter.php?updateid=$data_karakter[idkarakter]'> EDIT </a> ||
+                      <a href='delete_karakter.php?deleteid=$data_karakter[idkarakter]'> DELETE </a>
                     </td>
                 </tr>
                 ";

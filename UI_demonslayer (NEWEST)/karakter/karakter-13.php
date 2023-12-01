@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karakter - Tengen Uzui</title>
-    <link rel="stylesheet" href="./src/karakter-story.css" />
+    <link rel="stylesheet" href="../src/karakter-story.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
   <body>
     <!-- Navbar Section -->
     <?php 
-      include '../template/navbar.php';
+      include '.../template/navbar.php';
     ?>
 
     <!-- Alur Section -->
@@ -20,11 +20,6 @@
     <div class="alur__container">
       <div class="alur__content">
         <a href="../karakter.php">Karakter</a>
-          <div class="search-input">
-          <form class="nosubmit">
-            <input class="nosubmit" type="search" placeholder="Cari karakter">
-          </form>
-          </div>
         </div>
       </div>
   </div>
@@ -33,7 +28,7 @@
     <div class="main" id="karakter">
       <div class="main__container">
         <div class="main__img--container">
-          <img src="./img/karakter/m.png" alt="Demon Slayer" width="316.8" height="671"/>
+          <img src="../img/karakter/m.png" alt="Demon Slayer" width="316.8" height="671"/>
         </div>
         <div class="main__content">
           <h1>Tengen Uzui</h1>
@@ -62,7 +57,7 @@
       <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <img src="./img/register_login/logo.png" alt="Demon Slayer" width="57" height="53"/>
+            <img src="../img/register_login/logo.png" alt="Demon Slayer" width="57" height="53"/>
           </div>
           <p class="website__rights">Copyright @2023 Demon Ward</p>
         </div>
