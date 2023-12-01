@@ -86,7 +86,7 @@ while ($row = mysqli_fetch_assoc($read)) {
               <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
             </div>
             <div class="articles__card__title">Berita</div>
-            <div class="articles__card__headline"><?php echo $post['judul']; ?></div>
+            <div class="articles__card__headline" align="center"><?php echo $post['judul']; ?></div>
           </div>
         <?php endforeach; ?>
       </div>
