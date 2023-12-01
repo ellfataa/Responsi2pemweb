@@ -38,30 +38,30 @@
       <div class="karakter__container">
           <table>
             <tr>
-              <td><a href="karakter-1.php"><img src="./img/karakter/1.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-2.php"><img src="./img/karakter/2.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-3.php"><img src="./img/karakter/3.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-4.php"><img src="./img/karakter/4.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-5.php"><img src="./img/karakter/5.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-1.php"><img src="./img/karakter/1.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-2.php"><img src="./img/karakter/2.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-3.php"><img src="./img/karakter/3.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-4.php"><img src="./img/karakter/4.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-5.php"><img src="./img/karakter/5.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
             </tr>
             <tr>
-              <td><a href="karakter-6.php"><img src="./img/karakter/6.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-7.php"><img src="./img/karakter/7.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-8.php"><img src="./img/karakter/8.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-9.php"><img src="./img/karakter/9.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-10.php"><img src="./img/karakter/10.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-6.php"><img src="./img/karakter/6.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-7.php"><img src="./img/karakter/7.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-8.php"><img src="./img/karakter/8.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-9.php"><img src="./img/karakter/9.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-10.php"><img src="./img/karakter/10.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
             </tr>
             <tr>
-              <td><a href="karakter-11.php"><img src="./img/karakter/11.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-12.php"><img src="./img/karakter/12.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-13.php"><img src="./img/karakter/13.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-14.php"><img src="./img/karakter/14.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-15.php"><img src="./img/karakter/15.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-11.php"><img src="./img/karakter/11.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-12.php"><img src="./img/karakter/12.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-13.php"><img src="./img/karakter/13.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-14.php"><img src="./img/karakter/14.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-15.php"><img src="./img/karakter/15.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
             </tr>
             <tr>
-              <td><a href="karakter-16.php"><img src="./img/karakter/16.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-17.php"><img src="./img/karakter/17.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
-              <td><a href="karakter-18.php"><img src="./img/karakter/18.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-16.php"><img src="./img/karakter/16.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-17.php"><img src="./img/karakter/17.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
+              <td><a href="karakter/karakter-18.php"><img src="./img/karakter/18.png" alt="Demon Slayer" width="147.4" height="143"/></a></td>
             </tr>
           </table>
     </div>

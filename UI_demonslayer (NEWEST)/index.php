@@ -1,10 +1,12 @@
 <?php 
-include("koneksi.php");
+include 'koneksi.php';
 session_start();
+error_reporting(E_ALL ^ E_DEPRECATED and E_NOTICE);
 if($_SESSION['level']==""){
-  header("location:index.php?pesan=gagal");
+  header("location:login.php?pesan=gagal");
 
 }
+
 
 $read = mysqli_query($koneksi, "SELECT * FROM artikel ORDER BY idartikel ASC");
 $data_posts = mysqli_fetch_array($read);
@@ -76,12 +78,16 @@ $data_posts = mysqli_fetch_array($read);
           </div>
         <div class="articles__wrapper">  
           <div class="articles__card">
-            <img src="./img/home/artikel.png" alt="Card" width="401.5" height="100"/>
+            <div>
+            <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
+            </div>
             <div class="articles__card__title">Berita</div>
-            <div class="articles__card__headline">Judul Artikel</div>
+            <div class="articles__card__headline"><?php echo $data_posts[1] ?></div>
           </div>
           <div class="articles__card">
+            <div>
             <img src="./img/home/artikel.png" alt="Card" width="401.5" height="238.7"/>
+            </div>
             <div class="articles__card__title">Berita</div>
             <div class="articles__card__headline"><?php echo $data_posts[1] ?></div>
           </div>
