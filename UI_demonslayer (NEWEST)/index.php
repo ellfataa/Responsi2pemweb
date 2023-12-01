@@ -95,6 +95,18 @@ while ($row = mysqli_fetch_assoc($read)) {
       </div>
     </div>
 
+    <!--Footer Section -->
+    <div class="footer__container">
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <img src="./img/register_login/logo.png" alt="Demon Slayer" width="57" height="53"/>
+          </div>
+          <p class="website__rights">Copyright @2023 Demon Ward</p>
+        </div>
+      </section>
+    </div>
+
   <script src="index.js"></script>
   <script>
       document.getElementById('home-page').addEventListener('click', function() {
